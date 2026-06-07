@@ -9,10 +9,13 @@
   <title>Sewa & Jual Alat Berat LiuGong Surabaya</title>
   
   <!-- Meta description -->
-  <meta name="description" content="Distributor resmi alat berat LiuGong di Surabaya. Jual excavator, wheel loader, motor grader. Hubungi kami sekarang!">
+  <meta name="description" content="Dealer resmi alat berat LiuGong di Surabaya. Jual Alat Berat Surabaya. Jual ekskavator, wheel loader, motor grader. Hubungi kami sekarang!">
   
   <!-- Meta keywords -->
   <meta name="keywords" content="alat berat Surabaya, jual alat berat Surabaya, LiuGong Surabaya, jual alat berat LiuGong Surabaya, excavator Surabaya, dealer resmi LiuGong Surabaya, distributor LiuGong Surabaya, agen LiuGong Jawa Timur, wheel loader Surabaya, harga excavator Surabaya, harga excavator LiuGong Surabaya, harga alat berat LiuGong, alat berat konstruksi Surabaya, alat berat tambang">
+
+  <!-- Favicon (Icon Website) -->
+  <link rel="icon" href="logo liugong kotak.jpg" type="image/jpeg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +28,7 @@
       --muted: #6B6B6B;
       --border: #E5E7EB;
       --green: #25D366;
-      --radius: 6px;
+      --radius: 8px;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -51,7 +54,7 @@
       color: rgba(255,255,255,0.85);
       text-decoration: none;
       font-size: 15px;
-      font-weight: 700;       /* bold nav links */
+      font-weight: 700;
       letter-spacing: 0.2px;
       transition: color 0.2s;
     }
@@ -82,7 +85,6 @@
       font-size: 13px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
       padding: 6px 16px; border-radius: 3px; margin-bottom: 20px;
     }
-    /* "LiuGong Surabaya" – main title, bold but not enormous */
     .hero-title {
       font-size: clamp(44px, 6vw, 72px);
       font-weight: 900; color: white; line-height: 1.0;
@@ -90,12 +92,10 @@
       white-space: nowrap;
       text-shadow: 0 8px 40px rgba(0,0,0,0.45);
     }
-    /* "Built for Extreme Performance" – noticeably bigger than desc, smaller than title */
     .hero-subtitle {
       font-size: clamp(20px, 2.8vw, 36px);
       font-weight: 800; color: var(--yellow); line-height: 1.25; margin-bottom: 18px;
     }
-    /* Description – clearly readable, smaller than subtitle */
     .hero-desc {
       color: rgba(255,255,255,0.85);
       font-size: clamp(15px, 1.4vw, 19px);
@@ -136,70 +136,59 @@
     .category-label { font-size: 34px; font-weight: 800; color: var(--dark); margin-bottom: 6px; }
     .category-desc { font-size: 16px; color: var(--muted); margin-bottom: 28px; }
 
-    /* Mini & Medium: 2-col wide cards (like screenshot) */
-    .product-grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 28px;
-    }
-    /* Large: 3-col */
-    .product-grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
+    /* Grid Layouts */
+    .product-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+    .product-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 
-    /* Card shared */
     .product-card {
       background: white; border-radius: 12px; overflow: hidden;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
       display: flex; flex-direction: column;
       transition: transform 0.3s, box-shadow 0.3s;
     }
-    .product-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+    .product-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.12); }
 
-    /* Image area – taller for 2-col cards */
+    /* ── IMPROVED IMAGE WRAPPER ── */
     .card-img-wrap {
-      position: relative; background: #f0f0f0;
+      position: relative; 
+      background: #ffffff; 
       display: flex; align-items: center; justify-content: center;
       border-bottom: 1px solid var(--border); overflow: hidden;
+      padding: 10px; 
     }
-    .card-img-wrap img { object-fit: contain; transition: transform 0.4s ease; width: 80%; }
-    .product-card:hover .card-img-wrap img { transform: scale(1.04); }
+    .card-img-wrap img { 
+      width: 100%; 
+      height: 100%; 
+      object-fit: contain; 
+      transition: transform 0.4s ease; 
+    }
+    .product-card:hover .card-img-wrap img { transform: scale(1.08); }
 
-    /* Tall image for 2-col */
-    .img-tall { height: 340px; }
-    .img-tall img { height: 85%; }
-
-    /* Normal height for 3-col */
-    .img-normal { height: 240px; }
-    .img-normal img { height: 80%; }
+    .img-tall { height: 320px; }
+    .img-normal { height: 260px; }
 
     .card-badge {
       position: absolute; bottom: 0; left: 0; right: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%);
+      background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%);
       padding: 40px 20px 18px;
     }
     .card-badge-text {
       font-size: 32px; font-weight: 900; color: white;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.5); letter-spacing: -0.01em;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.6); letter-spacing: -0.01em;
     }
-    /* Smaller badge for 3-col */
     .badge-sm .card-badge-text { font-size: 24px; }
 
     .card-body { padding: 22px 24px; display: flex; flex-direction: column; gap: 0; flex-grow: 1; }
-    .spec-table-head { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); margin-bottom: 6px; }
-
+    
     .spec-row { display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-bottom: 1px solid var(--border); }
     .spec-row:last-of-type { border-bottom: none; }
     .spec-key { font-size: 14px; color: var(--muted); font-weight: 500; }
     .spec-val { font-size: 14px; font-weight: 700; color: var(--dark); }
 
-    /* Tighter specs for 3-col */
     .specs-sm .spec-row { padding: 7px 0; }
     .specs-sm .spec-key, .specs-sm .spec-val { font-size: 13px; }
 
-    .card-actions { display: flex; gap: 10px; margin-top: 18px; }
+    .card-actions { display: flex; gap: 10px; margin-top: 20px; }
     .btn-details {
       flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
       padding: 13px 14px; background: var(--dark); color: white;
@@ -220,11 +209,11 @@
     .modal-overlay.open { display: flex; }
     .modal-box { background: white; border-radius: 12px; width: 100%; max-width: 620px; max-height: 90vh; overflow-y: auto; position: relative; animation: modalIn 0.3s ease both; }
     @keyframes modalIn { from { opacity: 0; transform: scale(0.94) translateY(16px); } to { opacity: 1; transform: scale(1) translateY(0); } }
-    .modal-img-wrap { position: relative; height: 260px; background: #f9f9f9; display: flex; align-items: center; justify-content: center; border-radius: 12px 12px 0 0; overflow: hidden; border-bottom: 1px solid var(--border); }
-    .modal-img-wrap img { width: 75%; height: 75%; object-fit: contain; }
-    .modal-close { position: absolute; top: 14px; right: 14px; width: 36px; height: 36px; background: rgba(0,0,0,0.55); border: none; border-radius: 50%; color: white; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+    .modal-img-wrap { position: relative; height: 320px; background: #ffffff; display: flex; align-items: center; justify-content: center; border-radius: 12px 12px 0 0; overflow: hidden; border-bottom: 1px solid var(--border); padding: 20px; }
+    .modal-img-wrap img { width: 100%; height: 100%; object-fit: contain; }
+    .modal-close { position: absolute; top: 14px; right: 14px; width: 36px; height: 36px; background: rgba(0,0,0,0.55); border: none; border-radius: 50%; color: white; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; z-index: 10; }
     .modal-close:hover { background: rgba(0,0,0,0.85); }
-    .modal-cat-badge { position: absolute; bottom: 14px; left: 14px; background: var(--yellow); color: var(--dark); font-size: 12px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 12px; border-radius: 3px; }
+    .modal-cat-badge { position: absolute; bottom: 14px; left: 14px; background: var(--yellow); color: var(--dark); font-size: 12px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 12px; border-radius: 3px; z-index: 10; }
     .modal-body { padding: 28px 32px 32px; }
     .modal-unit-name { font-size: 40px; font-weight: 900; color: var(--dark); margin-bottom: 4px; }
     .modal-unit-tagline { font-size: 14px; color: var(--muted); margin-bottom: 24px; }
@@ -245,10 +234,16 @@
     .dealer-map-wrap { border-radius: 10px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); min-height: 380px; display: flex; flex-direction: column; }
     .dealer-map-wrap iframe { flex: 1; width: 100%; min-height: 280px; border: 0; }
     .map-btn-row { display: flex; }
-    .map-open-btn { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 16px; background: var(--dark); color: white; font-weight: 700; font-size: 14px; text-decoration: none; transition: background 0.2s; }
+    /* Membesarkan tombol Google Maps */
+    .map-open-btn { 
+      flex: 1; 
+      display: flex; align-items: center; justify-content: center; gap: 8px; 
+      padding: 18px; /* Padding ditambah agar lebih besar */
+      background: var(--dark); color: white; 
+      font-weight: 700; font-size: 15px; /* Font size ditambah */
+      text-decoration: none; transition: background 0.2s; 
+    }
     .map-open-btn:hover { background: #333; }
-    .map-wa-btn { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 16px; background: var(--green); color: white; font-weight: 700; font-size: 14px; text-decoration: none; transition: opacity 0.2s; }
-    .map-wa-btn:hover { opacity: 0.88; }
     .dealer-info { background: #F7F7F7; border-radius: 10px; padding: 36px; display: flex; flex-direction: column; gap: 28px; }
     .dealer-info-title { font-size: 30px; font-weight: 800; color: var(--dark); border-bottom: 3px solid var(--yellow); padding-bottom: 16px; }
     .info-block { display: flex; gap: 16px; align-items: flex-start; }
@@ -316,11 +311,11 @@
 <nav id="navbar">
   <div class="container nav-inner">
     <a class="nav-brand" href="#">
-      <img src="logo liugong kotak.png" alt="LiuGong Logo">
+      <img src="logo liugong kotak.png" alt="Logo LiuGong">
       <span class="nav-brand-name">LiuGong Surabaya</span>
     </a>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
+      <li><a href="#">Beranda</a></li>
       <li><a href="#products">Produk</a></li>
       <li><a href="#dealers">Dealer</a></li>
       <li>
@@ -333,7 +328,7 @@
     <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#">Home</a>
+    <a href="#">Beranda</a>
     <a href="#products">Produk</a>
     <a href="#dealers">Dealer</a>
     <a href="https://wa.me/6281235666327" target="_blank" style="color:var(--green)!important;">WhatsApp</a>
@@ -348,12 +343,12 @@
     <div class="hero-content">
       <div class="hero-tag">Dealer Resmi · Surabaya</div>
       <h1 class="hero-title">LiuGong Surabaya</h1>
-      <h2 class="hero-subtitle">Built for Extreme Performance</h2>
-      <p class="hero-desc">Excavator andalan untuk proyek konstruksi, infrastruktur, dan pertambangan skala besar maupun kecil.</p>
+      <h2 class="hero-subtitle">Diciptakan untuk Performa Ekstrem</h2>
+      <p class="hero-desc">Ekskavator andalan untuk proyek konstruksi, infrastruktur, dan pertambangan skala besar maupun kecil.</p>
       <div class="hero-btns">
         <a href="#products" class="btn-primary">
           <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
-          Lihat Excavator
+          Lihat Ekskavator
         </a>
         <a href="https://wa.me/6281235666327" target="_blank" class="btn-wa-hero">
           <svg class="wa-icon" width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.38 1.26 4.79L2 22l5.47-1.36c1.36.73 2.91 1.13 4.57 1.13 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm4.54 13.41l-.86.86c-.35.35-.83.55-1.33.55-.28 0-.57-.07-.84-.22l-.05-.03c-1.09-.6-2.02-1.4-2.8-2.38-.77-.98-1.31-2.06-1.61-3.23-.07-.29-.1-.58-.1-.87 0-.5.2-.98.55-1.33l.86-.86c.19-.19.44-.3.71-.3.27 0 .52.1.71.3l1.4 1.4c.39.39.39 1.02 0 1.41l-.38.38c.33.62.77 1.17 1.32 1.64.54.47 1.14.82 1.79 1.05l.38-.38c.19-.19.44-.3.71-.3.27 0 .52.1.71.3l1.4 1.4c.38.39.38 1.02-.12 1.41z"/></svg>
@@ -368,13 +363,13 @@
 <div class="stats-bar">
   <div class="container">
     <div class="stats-inner">
-      <div class="stat-item"><div class="stat-num">7+</div><div class="stat-label">Model Excavator</div></div>
+      <div class="stat-item"><div class="stat-num">7+</div><div class="stat-label">Model Ekskavator</div></div>
       <div class="stat-divider"></div>
-      <div class="stat-item"><div class="stat-num">45–145</div><div class="stat-label">kW Engine Range</div></div>
+      <div class="stat-item"><div class="stat-num">45–145</div><div class="stat-label">Tenaga Mesin (kW)</div></div>
       <div class="stat-divider"></div>
-      <div class="stat-item"><div class="stat-num">6–24t</div><div class="stat-label">Operating Weight</div></div>
+      <div class="stat-item"><div class="stat-num">6–24t</div><div class="stat-label">Berat Operasional</div></div>
       <div class="stat-divider"></div>
-      <div class="stat-item"><div class="stat-num">24/7</div><div class="stat-label">Support via WA</div></div>
+      <div class="stat-item"><div class="stat-num">24/7</div><div class="stat-label">Layanan via WA</div></div>
     </div>
   </div>
 </div>
@@ -384,25 +379,25 @@
   <div class="container">
     <div class="section-header">
       <div class="section-eyebrow">Katalog</div>
-      <h2 class="section-title">Lineup Excavator Kami</h2>
+      <h2 class="section-title">Pilihan Ekskavator Kami</h2>
       <div class="section-line"></div>
     </div>
 
     <div class="category-block">
-      <div class="category-label">Mini Excavator</div>
-      <div class="category-desc">Kompak dan lincah untuk area sempit, urban, dan proyek ringan.</div>
+      <div class="category-label">Ekskavator Mini</div>
+      <div class="category-desc">Kompak dan lincah untuk area sempit, wilayah perkotaan, dan proyek ringan.</div>
       <div class="product-grid-2" id="grid-mini"></div>
     </div>
 
     <div class="category-block">
-      <div class="category-label">Medium Excavator</div>
-      <div class="category-desc">Performa seimbang untuk infrastruktur dan konstruksi skala menengah.</div>
+      <div class="category-label">Ekskavator Menengah</div>
+      <div class="category-desc">Performa seimbang untuk pekerjaan infrastruktur dan konstruksi skala menengah.</div>
       <div class="product-grid-2" id="grid-medium"></div>
     </div>
 
     <div class="category-block">
-      <div class="category-label">Large Excavator</div>
-      <div class="category-desc">Mesin berat untuk tambang, earthmoving besar, dan kondisi ekstrem.</div>
+      <div class="category-label">Ekskavator Besar</div>
+      <div class="category-desc">Mesin tangguh untuk tambang, pengerukan tanah skala besar, dan kondisi ekstrem.</div>
       <div class="product-grid-3" id="grid-large"></div>
     </div>
   </div>
@@ -413,7 +408,7 @@
   <div class="container">
     <div class="section-header">
       <div class="section-eyebrow">Lokasi</div>
-      <h2 class="section-title">Dealer & Kantor Kami</h2>
+      <h2 class="section-title">Kantor & Dealer Resmi</h2>
       <div class="section-line"></div>
     </div>
     <div class="dealer-grid">
@@ -421,17 +416,13 @@
         <iframe src="https://maps.google.com/maps?q=Alat%20Berat%20Liugong%20Surabaya%20Sinopacific&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" title="Peta Lokasi LiuGong Surabaya"></iframe>
         <div class="map-btn-row">
           <a href="https://maps.google.com/?q=Komplek+Juanda+Business+Center+Blok+C+No.8+Sawotratap+Gedangan+Sidoarjo" target="_blank" class="map-open-btn">
-            <svg width="16" height="16" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <svg width="20" height="20" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
             Buka di Google Maps
-          </a>
-          <a href="https://wa.me/6281235666327" target="_blank" class="map-wa-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.38 1.26 4.79L2 22l5.47-1.36c1.36.73 2.91 1.13 4.57 1.13 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm4.54 13.41l-.86.86c-.35.35-.83.55-1.33.55-.28 0-.57-.07-.84-.22l-.05-.03c-1.09-.6-2.02-1.4-2.8-2.38-.77-.98-1.31-2.06-1.61-3.23-.07-.29-.1-.58-.1-.87 0-.5.2-.98.55-1.33l.86-.86c.19-.19.44-.3.71-.3.27 0 .52.1.71.3l1.4 1.4c.39.39.39 1.02 0 1.41l-.38.38c.33.62.77 1.17 1.32 1.64.54.47 1.14.82 1.79 1.05l.38-.38c.19-.19.44-.3.71-.3.27 0 .52.1.71.3l1.4 1.4c.38.39.38 1.02-.12 1.41z"/></svg>
-            Hubungi Kami
           </a>
         </div>
       </div>
       <div class="dealer-info">
-        <div class="dealer-info-title">LiuGong Equipment Dealer</div>
+        <div class="dealer-info-title">Dealer Alat Berat LiuGong</div>
         <div class="info-block">
           <div class="info-icon" style="background:#FDB714;">
             <svg width="20" height="20" fill="none" stroke="#111" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -475,16 +466,16 @@
 <!-- CTA -->
 <section class="cta-section">
   <div class="container cta-inner">
-    <h2 class="cta-title">Butuh excavator yang tepat?</h2>
-    <p class="cta-desc">Tim kami siap bantu Anda memilih unit terbaik untuk kebutuhan proyek</p>
+    <h2 class="cta-title">Butuh mesin yang tepat?</h2>
+    <p class="cta-desc">Tim ahli kami siap membantu Anda memilih unit terbaik sesuai kebutuhan proyek.</p>
     <div class="cta-btns">
       <a href="https://wa.me/6281235666327" target="_blank" class="btn-primary" style="background:var(--green);color:white;">
         <svg class="wa-icon" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.38 1.26 4.79L2 22l5.47-1.36c1.36.73 2.91 1.13 4.57 1.13 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm4.54 13.41l-.86.86c-.35.35-.83.55-1.33.55-.28 0-.57-.07-.84-.22l-.05-.03c-1.09-.6-2.02-1.4-2.8-2.38-.77-.98-1.31-2.06-1.61-3.23-.07-.29-.1-.58-.1-.87 0-.5.2-.98.55-1.33l.86-.86c.19-.19.44-.3.71-.3.27 0 .52.1.71.3l1.4 1.4c.39.39.39 1.02 0 1.41l-.38.38c.33.62.77 1.17 1.32 1.64.54.47 1.14.82 1.79 1.05l.38-.38c.19-.19.44-.3.71-.3.27 0 .52.1.71.3l1.4 1.4c.38.39.38 1.02-.12 1.41z"/></svg>
-        Hubungi WhatsApp
+        Chat via WhatsApp
       </a>
       <a href="#dealers" class="btn-outline">
         <svg width="16" height="16" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-        Temukan Dealer
+        Temukan Dealer Kami
       </a>
     </div>
   </div>
@@ -496,12 +487,12 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand-name">LiuGong Surabaya</div>
-        <div class="footer-brand-desc">Membangun masa depan dengan excavator handal dan bertenaga tinggi untuk setiap skala proyek.</div>
+        <div class="footer-brand-desc">Membangun masa depan dengan mesin handal dan bertenaga tinggi untuk setiap skala proyek konstruksi Anda.</div>
       </div>
       <div>
         <div class="footer-col-title">Navigasi</div>
         <div class="footer-links">
-          <a href="#">Home</a>
+          <a href="#">Beranda</a>
           <a href="#products">Produk</a>
           <a href="#dealers">Dealer</a>
         </div>
@@ -509,12 +500,12 @@
       <div>
         <div class="footer-col-title">Kontak</div>
         <div class="footer-links">
-          <a href="https://wa.me/6281235666327" target="_blank">WhatsApp Kami</a>
+          <a href="https://wa.me/6281235666327" target="_blank">WhatsApp Layanan</a>
           <a href="#dealers">Lihat Peta Lokasi</a>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">© 2026 LiuGong Surabaya. All rights reserved. | Built for extreme performance.</div>
+    <div class="footer-bottom">© 2026 LiuGong Surabaya. Hak cipta dilindungi undang-undang. | Diciptakan untuk performa ekstrem.</div>
   </div>
 </footer>
 
@@ -529,16 +520,16 @@
     <div class="modal-body">
       <div class="modal-unit-name" id="modalName"></div>
       <div class="modal-unit-tagline" id="modalTagline"></div>
-      <div class="modal-specs-title">Spesifikasi Teknis</div>
+      <div class="modal-specs-title">Spesifikasi Teknis Lengkap</div>
       <div class="modal-specs-grid" id="modalSpecsGrid"></div>
       <div class="modal-footer-btns">
         <a id="modalWaBtn" href="#" target="_blank" class="modal-btn-wa">
-          <svg class="wa-icon" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.38 1.26 4.79L2 22l5.47-1.36c1.36.73 2.91 1.13 4.57 1.13 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm4.54 13.41l-.86.86c-.35.35-.83.55-1.33.55-.28 0-.57-.07-.84-.22l-.05-.03c-1.09-.6-2.02-1.4-2.8-2.38-.77-.98-1.31-2.06-1.61-3.23-.07-.29-.1-.58-.1-.87 0-.5.2-.98.55-1.33l.86-.86c.19-.19.44-.3.71-.3.27 0 .52.1.71.3l1.4 1.4c.39.39.39 1.02 0 1.41l-.38.38c.33.62.77 1.17 1.32 1.64.54.47 1.14.82 1.79 1.05l.38-.38c.19-.19.44-.3.71-.3.27 0 .52.1.71.3l1.4 1.4c.38.39.38 1.02-.12 1.41z"/></svg>
-          Tanya via WhatsApp
+          <svg class="wa-icon" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.38 1.26 4.79L2 22l5.47-1.36c1.36.73 2.91 1.13 4.57 1.13 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm4.54 13.41l-.86.86c-.35.35-.83.55-1.33.55-.28 0-.57-.07-.84-.22l-.05-.03c-1.09-.6-2.02-1.4-2.8-2.38-.77-.98-1.31-2.06-1.61-3.23-.07-.29-.1-.58-.1-.87 0-.5.2-.98.55-1.33l.86-.86c.19-.19.44-.3.71-.3.27 0 .52.1.71.3l1.4 1.4c.38.39.38 1.02-.12 1.41z"/></svg>
+          Tanya Harga via WA
         </a>
         <a href="https://maps.google.com/?q=Komplek+Juanda+Business+Center+Blok+C+No.8+Sawotratap+Gedangan+Sidoarjo" target="_blank" class="modal-btn-dealer">
           <svg width="16" height="16" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          Find Dealer
+          Lokasi Dealer
         </a>
       </div>
     </div>
@@ -547,46 +538,46 @@
 
 <!-- FLOAT WA -->
 <a href="https://wa.me/6281235666327" target="_blank" class="float-wa">
-  <svg class="wa-icon" width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.38 1.26 4.79L2 22l5.47-1.36c1.36.73 2.91 1.13 4.57 1.13 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm4.54 13.41l-.86.86c-.35.35-.83.55-1.33.55-.28 0-.57-.07-.84-.22l-.05-.03c-1.09-.6-2.02-1.4-2.8-2.38-.77-.98-1.31-2.06-1.61-3.23-.07-.29-.1-.58-.1-.87 0-.5.2-.98.55-1.33l.86-.86c.19-.19.44-.3.71-.3.27 0 .52.1.71.3l1.4 1.4c.39.39.39 1.02 0 1.41l-.38.38c.33.62.77 1.17 1.32 1.64.54.47 1.14.82 1.79 1.05l.38-.38c.19-.19.44-.3.71-.3.27 0 .52.1.71.3l1.4 1.4c.38.39.38 1.02-.12 1.41z"/></svg>
+  <svg class="wa-icon" width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.38 1.26 4.79L2 22l5.47-1.36c1.36.73 2.91 1.13 4.57 1.13 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm4.54 13.41l-.86.86c-.35.35-.83.55-1.33.55-.28 0-.57-.07-.84-.22l-.05-.03c-1.09-.6-2.02-1.4-2.8-2.38-.77-.98-1.31-2.06-1.61-3.23-.07-.29-.1-.58-.1-.87 0-.5.2-.98.55-1.33l.86-.86c.19-.19.44-.3.71-.3.27 0 .52.1.71.3l1.4 1.4c.38.39.38 1.02-.12 1.41z"/></svg>
   Hubungi Kami
 </a>
 
 <script>
 const unitData = {
   "906F": {
-    img: "906f.png", category: "Mini Excavator",
-    tagline: "Compact & agile for tight urban spaces",
-    specs: { "Engine Power":"45 kW (60 HP)", "Operating Weight":"6,200 kg", "Bucket Capacity":"0.28 m³", "Max Dig Depth":"3.8 m", "Max Reach":"6.2 m", "Swing Speed":"11.5 rpm" }
+    img: "906f.png", category: "Ekskavator Mini",
+    tagline: "Kompak & lincah untuk area perkotaan yang sempit",
+    specs: { "Daya Mesin":"45 kW (60 HP)", "Berat Operasional":"6.200 kg", "Kapasitas Bucket":"0.28 m³", "Galian Maks":"3.8 m", "Jangkauan Maks":"6.2 m", "Kecepatan Putar":"11.5 rpm" }
   },
   "908E": {
-    img: "908e.png", category: "Mini Excavator",
-    tagline: "More power, still nimble for light construction",
-    specs: { "Engine Power":"49 kW", "Operating Weight":"8,400 kg", "Bucket Capacity":"0.32 m³", "Max Dig Depth":"4.2 m", "Max Reach":"6.8 m", "Swing Speed":"11.2 rpm" }
+    img: "908e.png", category: "Ekskavator Mini",
+    tagline: "Lebih bertenaga, tetap lincah untuk konstruksi ringan",
+    specs: { "Daya Mesin":"49 kW", "Berat Operasional":"8.400 kg", "Kapasitas Bucket":"0.32 m³", "Galian Maks":"4.2 m", "Jangkauan Maks":"6.8 m", "Kecepatan Putar":"11.2 rpm" }
   },
   "912E FM": {
-    img: "912efm.png", category: "Medium Excavator",
-    tagline: "Balanced muscle for infrastructure work",
-    specs: { "Engine Power":"90 kW", "Operating Weight":"12,800 kg", "Bucket Capacity":"0.54 m³", "Max Dig Depth":"5.5 m", "Max Reach":"8.6 m", "Swing Speed":"10.8 rpm" }
+    img: "912efm.png", category: "Ekskavator Menengah",
+    tagline: "Tenaga seimbang untuk proyek pengerjaan infrastruktur",
+    specs: { "Daya Mesin":"90 kW", "Berat Operasional":"12.800 kg", "Kapasitas Bucket":"0.54 m³", "Galian Maks":"5.5 m", "Jangkauan Maks":"8.6 m", "Kecepatan Putar":"10.8 rpm" }
   },
   "915E FM": {
-    img: "915efm.png", category: "Medium Excavator",
-    tagline: "Versatile performer for mid-scale projects",
-    specs: { "Engine Power":"105 kW", "Operating Weight":"15,200 kg", "Bucket Capacity":"0.66 m³", "Max Dig Depth":"6.2 m", "Max Reach":"9.4 m", "Swing Speed":"10.5 rpm" }
+    img: "915efm.png", category: "Ekskavator Menengah",
+    tagline: "Performa serbaguna untuk berbagai proyek skala menengah",
+    specs: { "Daya Mesin":"105 kW", "Berat Operasional":"15.200 kg", "Kapasitas Bucket":"0.66 m³", "Galian Maks":"6.2 m", "Jangkauan Maks":"9.4 m", "Kecepatan Putar":"10.5 rpm" }
   },
   "920Ees": {
-    img: "920ees.png", category: "Large Excavator",
-    tagline: "Heavy-duty with enhanced stability system",
-    specs: { "Engine Power":"125 kW", "Operating Weight":"20,500 kg", "Bucket Capacity":"0.92 m³", "Max Dig Depth":"6.8 m", "Max Reach":"10.2 m", "Swing Speed":"9.8 rpm" }
+    img: "920ees.png", category: "Ekskavator Besar",
+    tagline: "Andalan tugas berat dengan sistem stabilitas yang canggih",
+    specs: { "Daya Mesin":"125 kW", "Berat Operasional":"20.500 kg", "Kapasitas Bucket":"0.92 m³", "Galian Maks":"6.8 m", "Jangkauan Maks":"10.2 m", "Kecepatan Putar":"9.8 rpm" }
   },
   "920E": {
-    img: "920e.png", category: "Large Excavator",
-    tagline: "Proven workhorse for large earthmoving",
-    specs: { "Engine Power":"132 kW", "Operating Weight":"21,300 kg", "Bucket Capacity":"1.00 m³", "Max Dig Depth":"7.1 m", "Max Reach":"10.6 m", "Swing Speed":"9.5 rpm" }
+    img: "920e.png", category: "Ekskavator Besar",
+    tagline: "Mesin kokoh teruji untuk pengerukan tanah skala besar",
+    specs: { "Daya Mesin":"132 kW", "Berat Operasional":"21.300 kg", "Kapasitas Bucket":"1.00 m³", "Galian Maks":"7.1 m", "Jangkauan Maks":"10.6 m", "Kecepatan Putar":"9.5 rpm" }
   },
   "922E": {
-    img: "922e.png", category: "Large Excavator",
-    tagline: "Top-tier power for mining & extreme conditions",
-    specs: { "Engine Power":"145 kW", "Operating Weight":"23,800 kg", "Bucket Capacity":"1.12 m³", "Max Dig Depth":"7.4 m", "Max Reach":"11.1 m", "Swing Speed":"9.2 rpm" }
+    img: "922e.png", category: "Ekskavator Besar",
+    tagline: "Tenaga maksimal untuk pertambangan & kondisi ekstrem",
+    specs: { "Daya Mesin":"145 kW", "Berat Operasional":"23.800 kg", "Kapasitas Bucket":"1.12 m³", "Galian Maks":"7.4 m", "Jangkauan Maks":"11.1 m", "Kecepatan Putar":"9.2 rpm" }
   }
 };
 
@@ -596,16 +587,19 @@ const waSvg = `<svg width="15" height="15" viewBox="0 0 24 24" fill="white"><pat
 
 function buildCard(name, isLarge) {
   const d = unitData[name];
-  const waMsg = encodeURIComponent('Halo Bagas, saya tertarik unit ' + name);
+  const waMsg = encodeURIComponent('Halo Bagas, saya tertarik dengan informasi mengenai unit ' + name);
   const waLink = 'https://wa.me/6281235666327?text=' + waMsg;
   const specCount = isLarge ? 3 : 3;
   const specKeys = Object.keys(d.specs).slice(0, specCount);
   const specRows = specKeys.map(k =>
     `<div class="spec-row"><span class="spec-key">${k}</span><span class="spec-val">${d.specs[k]}</span></div>`
   ).join('');
+  
+  // Img class height
   const imgClass = isLarge ? 'img-normal' : 'img-tall';
   const badgeClass = isLarge ? 'badge-sm' : '';
   const specsClass = isLarge ? 'specs-sm' : '';
+  
   return `
     <div class="product-card">
       <div class="card-img-wrap ${imgClass}">
@@ -619,7 +613,7 @@ function buildCard(name, isLarge) {
         <div class="card-actions">
           <button class="btn-details" onclick="openModal('${name}')">
             <svg width="14" height="14" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            View Details
+            Lihat Detail
           </button>
           <a href="${waLink}" target="_blank" class="btn-wa">${waSvg} WhatsApp</a>
         </div>
@@ -634,7 +628,7 @@ Object.entries(categoryMap).forEach(([cat, names]) => {
 
 function openModal(name) {
   const d = unitData[name];
-  const waMsg = encodeURIComponent('Halo Bagas, saya tertarik unit ' + name);
+  const waMsg = encodeURIComponent('Halo Bagas, saya butuh penawaran harga untuk unit ' + name);
   document.getElementById('modalImg').src = d.img;
   document.getElementById('modalImg').alt = name;
   document.getElementById('modalName').textContent = name;
@@ -662,3 +656,5 @@ document.querySelectorAll('.mobile-menu a').forEach(a => a.addEventListener('cli
 </script>
 </body>
 </html>
+
+kasih contoh mau nambah logo klien dan nambahin tulisan "siap dikirim ke seluruh indonesia" dibagian mana ya bgusnya
