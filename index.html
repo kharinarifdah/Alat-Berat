@@ -818,6 +818,38 @@ const products = {
       { group: "Engine", items: { "Model": "Cummins 6BTAA5.9-C130", "Emissions": "EPA Tier 2" } }
     ]
   },
+  "835H-E": {
+    category: "Wheel Loaders", subCategory: "Medium Wheel Loaders", isHot: false, img: "835H-E.png", desc: "Medium wheel loader.",
+    specs: { "OPERATING WEIGHT":"10,300 kg", "RATED POWER":"92 kW", "BUCKET CAPACITY":"2.0 m³" },
+    detailedSpecs: [
+      { group: "Base", items: { "Operating Weight": "10,300 kg", "Bucket Capacity": "2.0 m³", "Rated Power": "92 kW (125 hp) @ 2,000 rpm", "Loading Capacity": "3 ton" } },
+      { group: "Engine", items: { "Model": "Yuchai YC6J125Z-T22" } }
+    ]
+  },
+  "835HM": {
+    category: "Wheel Loaders", subCategory: "Medium Wheel Loaders", isHot: false, img: "835HM.png", desc: "Medium wheel loader.",
+    specs: { "OPERATING WEIGHT":"10,300 kg", "RATED POWER":"92 kW", "BUCKET CAPACITY":"2.0 m³" },
+    detailedSpecs: [
+      { group: "Base", items: { "Operating Weight": "10,300 kg", "Bucket Capacity": "2.0 m³", "Rated Power": "92 kW (125 hp) @ 2,000 rpm", "Loading Capacity": "3 ton" } },
+      { group: "Engine", items: { "Model": "Cummins" } }
+    ]
+  },
+  "855H": {
+    category: "Wheel Loaders", subCategory: "Large Wheel Loaders", isHot: false, img: "855H.png", desc: "Large wheel loader.",
+    specs: { "OPERATING WEIGHT":"16,700 kg", "RATED POWER":"162 kW", "BUCKET CAPACITY":"3.0 m³" },
+    detailedSpecs: [
+      { group: "Base", items: { "Operating Weight": "16,700 kg", "Bucket Capacity": "3.0 m³", "Rated Power": "162 kW (217 hp) @ 2,000 rpm", "Loading Capacity": "5 ton" } },
+      { group: "Engine", items: { "Model": "Cummins 6LT9.3" } }
+    ]
+  },
+  "856H-LA": {
+    category: "Wheel Loaders", subCategory: "Large Wheel Loaders", isHot: false, img: "856H-LA.png", desc: "Large wheel loader with long arm.",
+    specs: { "OPERATING WEIGHT":"17,000 kg", "RATED POWER":"162 kW", "BUCKET CAPACITY":"5.3 m³" },
+    detailedSpecs: [
+      { group: "Base", items: { "Operating Weight": "17,000 kg", "Bucket Capacity": "5.3 m³", "Rated Power": "162 kW (220 hp) @ 2,200 rpm", "Loading Capacity": "5 ton" } },
+      { group: "Engine", items: { "Model": "Cummins 6LTAA9.3" } }
+    ]
+  },
   "ZL50CN": {
     category: "Wheel Loaders", subCategory: "Large Wheel Loaders", isHot: false, img: "ZL50CN.png", 
     desc: "Versatile machine.",
@@ -960,15 +992,28 @@ const products = {
       { group: "Dimensions", items: { "Shipping Length": "9,540 mm", "Shipping Width": "3,000 mm", "Shipping Height": "3,140 mm", "Track Shoe Width (STD)": "800 mm" } }
     ]
   },
-  "922F": {
-    category: "Excavators", isHot: true, img: "922F.png", desc: "Powerful medium excavator.",
-    specs: { "OPERATING WEIGHT":"22,800 kg", "RATED POWER":"116 kW", "BUCKET CAPACITY":"0.9-1.4 m³" },
+"922E": {
+    category: "Excavators", isHot: false, img: "922E.png", desc: "Advanced medium excavator.",
+    specs: { "OPERATING WEIGHT":"22,000 kg", "RATED POWER":"124 kW", "BUCKET CAPACITY":"1.1 cbm" },
     detailedSpecs: [
-      { group: "Base", items: { "Operating Weight": "22,800 kg", "Rated Power": "116 kW @ 2200 rpm", "Bucket Capacity": "1.1 m³" } },
-      { group: "Performance", items: { "Arm Digging Force": "105 kN", "Bucket Digging Force": "152.5 kN" } },
-      { group: "Engine", items: { "Model": "Cummins B6.7", "Emission": "Stage V / Tier 4F" } },
-      { group: "Hydraulic System", items: { "System Maximum Flow": "2×214.5 L/min", "System Pressure": "37.3 MPa" } },
-      { group: "Dimensions", items: { "Shipping Length": "9,620 mm", "Shipping Width": "2,990 mm", "Shipping Height": "3,000 mm", "Track Shoe Width (STD)": "600 mm" } }
+      { group: "Base", items: { "Operating Weight": "22,000 kg", "Bucket Capacity": "1.1 cbm", "Rated Power": "124 kW (169 hp) @ 2,050 rpm" } },
+      { group: "Engine", items: { "Model": "Cummins QSB7" } }
+    ]
+  },
+  "922E-Long Arm": {
+    category: "Excavators", isHot: false, img: "922E-Long Arm.png", desc: "Long arm medium excavator.",
+    specs: { "OPERATING WEIGHT":"22,500 kg", "RATED POWER":"112 kW", "BUCKET CAPACITY":"0.45 cbm" },
+    detailedSpecs: [
+      { group: "Base", items: { "Operating Weight": "22,500 kg", "Bucket Capacity": "0.45 cbm", "Rated Power": "112 kW (152 hp) @ 1,950 rpm" } },
+      { group: "Engine", items: { "Model": "Cummins B5.9" } }
+    ]
+  },
+  "933E": {
+    category: "Excavators", isHot: false, img: "933E.png", desc: "Heavy excavator.",
+    specs: { "OPERATING WEIGHT":"33,000 kg", "RATED POWER":"169 kW", "BUCKET CAPACITY":"2.0 cbm" },
+    detailedSpecs: [
+      { group: "Base", items: { "Operating Weight": "33,000 kg", "Bucket Capacity": "2.0 cbm", "Rated Power": "169 kW (230 hp) @ 2,050 rpm" } },
+      { group: "Engine", items: { "Model": "Cummins QSB7" } }
     ]
   },
   "922FE": {
@@ -1062,6 +1107,15 @@ const products = {
       { group: "Attachments", items: { "Ripper Options": "Triple-shank", "Hydraulic Winch": "Yes", "Blade Options": "Straight; Angle; Full-U; Wetland type Landfill" } }
     ]
   },
+  "B160CL": {
+    category: "Bulldozers", isHot: false, img: "B160CL.png", desc: "Bulldozer with wider track shoe.",
+    specs: { "OPERATING WEIGHT":"18,500 kg", "ENGINE POWER":"131 kW", "DOZING CAPACITY":"5.5 cbm" },
+    detailedSpecs: [
+      { group: "Base", items: { "Operating Weight": "18.5 t", "Engine Power": "131 kW (176 hp) @ 1,850 rpm", "Dozing Capacity": "5.5 cbm", "Blade Type": "straight-tilt" } },
+      { group: "Engine", items: { "Model": "WEICHAI WD10G178E25" } },
+      { group: "Dimensions", items: { "Track Shoe Width": "850 mm" } }
+    ]
+  },
   "B230": {
     category: "Bulldozers", isHot: true, img: "B230.png", desc: "Heavy duty bulldozer.",
     specs: { "OPERATING WEIGHT":"24,500 kg", "ENGINE POWER":"179 kW", "BLADE CAPACITY":"7.8 m³" },
@@ -1080,7 +1134,16 @@ const products = {
       { group: "Dimensions", items: { "Ground Pressure": "55.8 kPa", "Track Shoe Width": "510 mm" } }
     ]
   },
-
+"LD20DL": {
+    category: "Bulldozers", isHot: false, img: "LD20DL.png", desc: "Powerful earthmoving bulldozer.",
+    specs: { "OPERATING WEIGHT":"20,000 kg", "ENGINE POWER":"154 kW", "DOZING CAPACITY":"6.5 cbm" },
+    detailedSpecs: [
+      { group: "Base", items: { "Operating Weight": "20 ton", "Engine Power": "154 kW", "Dozing Capacity": "6.5 cbm", "Blade Type": "straight-tilt" } },
+      { group: "Engine", items: { "Model": "CUMMINS QSL9.3" } },
+      { group: "Dimensions", items: { "Track Shoe Width": "850 mm" } }
+    ]
+  },
+  
   // ── MOTOR GRADERS ──
   "4140D": {
     category: "Motor Graders", isHot: false, img: "4140D.png", desc: "Standard motor grader.",
@@ -1102,6 +1165,15 @@ const products = {
       { group: "Dimensions", items: { "Blade Width": "4,270 mm", "Overall Length": "9,090 mm" } }
     ]
   },
+  "4230DS": {
+    category: "Motor Graders", isHot: false, img: "4230DS.png", desc: "Heavy duty grader with ripper.",
+    specs: { "OPERATING WEIGHT":"17,000 kg", "BLADE WIDTH":"4,270 mm", "RATED POWER":"180 kW" },
+    detailedSpecs: [
+      { group: "Base", items: { "Operating Weight": "17,000 kg", "Including": "Ripper" } },
+      { group: "Engine", items: { "Model": "Cummins QSL9.3", "Rated Power": "180 kW (241 hp) @ 2,200 rpm" } },
+      { group: "Dimensions", items: { "Blade Width": "4270 mm / 14 feet" } }
+    ]
+  }
   "4260D": {
     category: "Motor Graders", isHot: false, img: "4260D.png", desc: "Advanced grader for large sites.",
     specs: { "OPERATING WEIGHT":"20,500 kg", "BLADE WIDTH":"4,270 mm", "DRAWBAR PULL":"112 kN" },
@@ -1169,14 +1241,22 @@ const products = {
   },
 
   // ── ROLLERS ──
-  "6611E": {
-    category: "Rollers", isHot: false, img: "6611E.png", desc: "Standard roller.",
-    specs: { "OPERATING WEIGHT":"11,350 kg", "VIB FREQ":"30/33 Hz", "APTITUDE":"2.0/1.1 mm" },
+"6611E-cabin": {
+    category: "Rollers", isHot: false, img: "6611E-cabin.png", desc: "Vibro roller with cabin.",
+    specs: { "OPERATING WEIGHT":"11,350 kg", "VIB FREQ":"30/33 Hz", "AMPLITUDE":"2.0/1.1 mm" },
     detailedSpecs: [
-      { group: "Base", items: { "Operating Mass": "11,350 kg" } },
-      { group: "Engine", items: { "Model": "Cummins 4BTAA3.9-C125", "Rated Power": "93 kW @ 2,200 rpm", "Emission": "Stage II" } },
-      { group: "Compaction", items: { "Vibration Frequency": "30/33 Hz", "Centrifugal Force": "300/190 kN", "Drum Diameter": "1,555 mm" } },
-      { group: "Dimensions", items: { "Overall Length": "6,000 mm", "Overall Width": "2,280 mm", "Overall Height": "3,180 mm" } }
+      { group: "Base", items: { "Operating Weight": "11,350 kg" } },
+      { group: "Engine", items: { "Model": "Cummins 4BTAA3.9", "Rated Power": "93 kW (125 hp) @ 2,200 rpm" } },
+      { group: "Compaction", items: { "Vibration Frequency": "30/33 Hz", "Amplitude": "2.0/1.1 mm", "Centrifugal Force": "300/190 kN" } }
+    ]
+  },
+  "6611E-canopy": {
+    category: "Rollers", isHot: false, img: "6611E-canopy.png", desc: "Vibro roller with canopy.",
+    specs: { "OPERATING WEIGHT":"11,350 kg", "VIB FREQ":"30/33 Hz", "AMPLITUDE":"2.0/1.1 mm" },
+    detailedSpecs: [
+      { group: "Base", items: { "Operating Weight": "11,350 kg" } },
+      { group: "Engine", items: { "Model": "Cummins 4BTAA3.9", "Rated Power": "93 kW (125 hp) @ 2,200 rpm" } },
+      { group: "Compaction", items: { "Vibration Frequency": "30/33 Hz", "Amplitude": "2.0/1.1 mm", "Centrifugal Force": "300/190 kN" } }
     ]
   },
   "6620E": {
